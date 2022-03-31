@@ -13,12 +13,13 @@ from metadata import sample_metadata
 
 def main():
     simple = Simple[-1]
-    nft_name = 'lamp-a'
+    token_id = 2
+    nft_name = 'lamp-b'
     metadata_uri = gen_metadata(nft_name)
-    set_tokenURI(1, simple, metadata_uri)
+    set_tokenURI(token_id, simple, metadata_uri)
 
 def gen_metadata(nft_name):
-    nft_name = 'lamp-a'
+    # nft_name = 'lamp-a'
     image_path = f'./img/{nft_name}.jpg'
     with open(image_path, "rb") as f:
         file_content = f.read()

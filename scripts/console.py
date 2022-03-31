@@ -7,6 +7,6 @@ from .tools import get_account, OPENSEA
 
 def main():
     simple = Simple[-1]
-    # print(simple.tokenCounter())
-    print(simple.ownerOf(1))
-    print(simple.tokenURI(1))
+    print(simple.tokenCounter())
+    print(simple.ownerOf(3))
+    print(simple.tokenURI(3))
